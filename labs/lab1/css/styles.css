@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background-color: #002A4E;
     color: #DDDAC7;
     font-family: 'Gurajada', serif;
+    font-size: 2em;
 }
 header, main, nav, footer {
     text-align: center;
