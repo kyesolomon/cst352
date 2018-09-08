@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    color: #DDDAC7;
+    font-family: 'Gurajada', serif;
+}
+header, main, nav, footer {
+    text-align: center;
+}
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    color: #2B7E9F;
+    font-size: 4.5em;
+    margin-bottom: 0px;
+}
+nav a { /*links within nv container*/
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 2.5em;
+    text-decoration: none; /*removes underline*/
+    color: #DDDAC7; /*by default, links are blue*/
+    font-family: 'Bungee Inline', cursive;
+}
+.active {
+    background-color: #125A37;
+    color: #DDDAC7;
+}
+nav a:hover { /* pseudo class */
+    border-bottom: 2px orange solid;
+    font-size: 3em;
+    transition: .9s; /*transition effect */
+    background-color: #125A37;
+}
+figure, div {
+    float: left;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+#me, #welcomeText {
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    padding: 25px;
+}
+footer {
+    position: relative;
+    clear: left;
+    color: #DDDAC7;
+}
+#logo {
+    position: absolute;
+    bottom: -20px;
+    right: -300px;
+}
+table {
+    margin: 10px auto;
+}
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+td strong {
+    color: #2B7E9F;
+}
+#table-header {
+    background-color: #351a00;
+}
+.table-row {
+    background-color: #753900;
+    text-align: center;
+}
+ul {
+    text-align: left;
+}
+.hobby {
+    color: yellow;
+}
+#content {
+    padding-left: 315px;
+    padding-right: 315px;
+}
+
