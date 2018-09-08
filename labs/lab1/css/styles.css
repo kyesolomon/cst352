@@ -10,13 +10,13 @@ header, main, nav, footer {
 h1 {
     font-family: 'Bungee Shade', cursive;
     color: #2B7E9F;
-    font-size: 4.5em;
+    font-size: 4em;
     margin-bottom: 0px;
 }
 nav a { /*links within nv container*/
     padding: 15px;
     padding-bottom: 4px;
-    font-size: 2.5em;
+    font-size: 2em;
     text-decoration: none; /*removes underline*/
     color: #DDDAC7; /*by default, links are blue*/
     font-family: 'Bungee Inline', cursive;
@@ -30,6 +30,7 @@ nav a:hover { /* pseudo class */
     font-size: 3em;
     transition: .9s; /*transition effect */
     background-color: #125A37;
+    text-decoration: none;
 }
 figure, div {
     float: left;
@@ -39,13 +40,14 @@ figure, div {
 #me, #welcomeText {
     float: left;
     text-align: left;
-    font-size: 20px;
-    padding: 25px;
+    padding: 20px;
+    font-size: 1em;
 }
 footer {
     position: relative;
     clear: left;
     color: #DDDAC7;
+    font-size: .5em;
 }
 #logo {
     position: absolute;
