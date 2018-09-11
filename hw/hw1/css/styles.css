@@ -13,21 +13,19 @@ h1 {
     font-size: 4em;
     margin-bottom: 0px;
 }
-nav a { /*links within nv container*/
+nav a { 
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.5em;
-    text-decoration: none; /*removes underline*/
-    color: #DDDAC7; /*by default, links are blue*/
+    text-decoration: none; 
+    color: #DDDAC7; 
     font-family: 'Bungee Inline', cursive;
 }
 .active {
     background-color: #125A37;
     color: #DDDAC7;
 }
-nav a:hover { /* pseudo class */
-    font-size: 2em;
-    transition: .9s; /*transition effect */
+nav a:hover { 
     background-color: #125A37;
     text-decoration: none;
 }
@@ -44,7 +42,7 @@ footer {
     position: relative;
     clear: left;
     color: #DDDAC7;
-    font-size: .5em;
+    font-size: 1em;
 }
 #logo {
     position: absolute;
@@ -71,12 +69,44 @@ td strong {
 }
 ul {
     text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .hobby {
     color: yellow;
 }
 #content {
-    padding-left: 315px;
-    padding-right: 315px;
+    font-size: 1.5em;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-container a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #DDDAC7; 
+    font-family: 'Bungee Inline', cursive;
+}
+.button {
+    background-color: #125A37;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #DDDAC7; 
+    font-family: 'Bungee Inline', cursive;
+    position: absolute;
+    bottom: 360px;
+    right: 550px;
 }
 
+.button:hover {
+    background-color: #DDDAC7;
+    color: #125A37;
+}
