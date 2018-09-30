@@ -75,12 +75,8 @@
     <head>
         <title> Lab 3: Ace Poker </title>
         <style>
-            h1, h2, body {
-                text-align: center;
-            }
-            .ace {
-                border: 2px yellow solid;
-            }
+            @import url("css/styles.css");
+            @import url('https://fonts.googleapis.com/css?family=Rye');
         </style>
     </head>
     <body>
@@ -104,6 +100,6 @@
         <h2>
             <?=displayWinner($p1, $p2)?>
         </h2>
-        
+        <a href="https://ew1rnkpr02250stogros.blob.core.windows.net/media/Grosvenor/sideGames/Background/Game-Background-GRO-Blackjack.jpg">Background source</a>
     </body>
 </html>
