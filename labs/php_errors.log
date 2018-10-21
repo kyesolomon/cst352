@@ -1,0 +1,26 @@
+[11-Oct-2018 18:17:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root1'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/labs/lab5/index.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab5/index.php(9): PDO->__construct('mysql:host=loca...', 'root1', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab5/index.php on line 9
+[11-Oct-2018 18:17:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'quotez'' in /home/ubuntu/workspace/cst352/labs/lab5/index.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab5/index.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab5/index.php on line 9
+[11-Oct-2018 18:27:33 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst352/labs/lab5/index.php on line 14
+[11-Oct-2018 18:27:33 UTC] PHP Stack trace:
+[11-Oct-2018 18:27:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/labs/lab5/index.php:0
+[11-Oct-2018 18:27:33 UTC] PHP   2. displayAllQuotes() /home/ubuntu/workspace/cst352/labs/lab5/index.php:35
+[16-Oct-2018 05:01:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,1' at line 2' in /home/ubuntu/workspace/cst352/labs/lab5/index.1.php:38
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab5/index.1.php(38): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab5/index.1.php(65): displayRandomQuote()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab5/index.1.php on line 38
+[16-Oct-2018 05:02:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quotes.q_authors' doesn't exist' in /home/ubuntu/workspace/cst352/labs/lab5/index.1.php:38
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab5/index.1.php(38): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab5/index.1.php(65): displayRandomQuote()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab5/index.1.php on line 38

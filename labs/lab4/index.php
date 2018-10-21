@@ -66,7 +66,7 @@
 
         <form method="get">
             
-            <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET["keyword"]?>"/>
+            <input type="text" id="keyword_box" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET["keyword"]?>"/>
             <input type="radio" name="layout" value="horizontal" id="hlayout" 
             
             <?php
@@ -88,11 +88,11 @@
               
             <select name="category">
                 <option value=""> Select One </option>
-                <option> Mountains </option>
-                <option> Sea </option>
-                <option> Sky </option>
-                <option> Forest </option>
-                <option value="snow"> Winter </option>
+                <option> Art </option>
+                <option> Food </option>
+                <option> Music </option>
+                <option> Style </option>
+                <option value="snow"> Technology </option>
             </select>  
             
             <input type="submit" name="submitBtn" value="Go!" />
