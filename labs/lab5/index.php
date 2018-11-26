@@ -1,13 +1,8 @@
 <?php
 //creating connection to database
-$host = "localhost";  //c9
-$dbname = "quotes";
-$username = "root";
-$password = "";
 
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", 
-$username, $password);
-$dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+include '../../sqlConnection.php';
+$dbConn = getConnection("quotes");
 
 function displayAllQuotes() {
     global $dbConn;
@@ -24,6 +19,31 @@ function displayAllQuotes() {
         
         echo $record['quote'] . "<br>";
         
+    }//end Foreach
+    
+} //endFunction
+
+
+function displayRandomQuote() {
+    global $dbConn;
+    
+    $randomRecord = rand(0,26);
+    $sql = "SELECT * FROM q_quotes 
+            NATURAL JOIN q_author  
+            LIMIT $randomRecord,1";
+    $statement = $dbConn->prepare($sql);
+    $statement->execute();
+    //$records = $statement->fetch(); //returns only ONE record
+    $records = $statement->fetchAll(PDO::FETCH_ASSOC); //returns multiple records
+    
+    //print_r($records);
+    
+    foreach ($records as $record) {
+        
+        echo $record['quote'] . "<br>";
+        echo "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>";
+        echo  $record['firstName'] . "  " . $record['lastName'];
+        echo "</a>";
     }
     
 }
@@ -40,8 +60,11 @@ function displayAllQuotes() {
 
         <h1> Random Famous Quote </h1>
 
-
-        <?= displayAllQuotes() ?>
+        
+         <?= displayRandomQuote() ?>
+         <br><br>
+      
+        <iframe name="authorInfo" frameborder="0" width="600" height="300"> </iframe>
    
         <!--
         //find out how many records there eare in the quotes table.

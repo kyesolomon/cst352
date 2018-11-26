@@ -1,3 +1,80 @@
 [11-Sep-2018 18:24:02 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst352/practice/randomBackgroundcolor.php on line 26
 [11-Sep-2018 18:24:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst352/practice/randomBackgroundcolor.php on line 26
 [11-Sep-2018 18:30:39 UTC] PHP Parse error:  syntax error, unexpected '";"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst352/practice/randomBackgroundcolor.php on line 24
+[25-Oct-2018 17:46:40 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:46:40 UTC] PHP Stack trace:
+[25-Oct-2018 17:46:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:46:40 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:46:40 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:46:51 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:46:51 UTC] PHP Stack trace:
+[25-Oct-2018 17:46:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:46:51 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:46:51 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:48:22 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:48:22 UTC] PHP Stack trace:
+[25-Oct-2018 17:48:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:48:22 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:48:22 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:49:03 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:49:03 UTC] PHP Stack trace:
+[25-Oct-2018 17:49:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:49:03 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:49:03 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:49:06 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:49:06 UTC] PHP Stack trace:
+[25-Oct-2018 17:49:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:49:06 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:49:06 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:49:21 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 180
+[25-Oct-2018 17:49:21 UTC] PHP Stack trace:
+[25-Oct-2018 17:49:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:49:21 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:273
+[25-Oct-2018 17:49:21 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:180
+[25-Oct-2018 17:50:40 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 118
+[25-Oct-2018 17:50:40 UTC] PHP Stack trace:
+[25-Oct-2018 17:50:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:50:40 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:211
+[25-Oct-2018 17:50:40 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:118
+[25-Oct-2018 17:51:03 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 118
+[25-Oct-2018 17:51:03 UTC] PHP Stack trace:
+[25-Oct-2018 17:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:51:03 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:211
+[25-Oct-2018 17:51:03 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:118
+[25-Oct-2018 17:53:54 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 116
+[25-Oct-2018 17:53:54 UTC] PHP Stack trace:
+[25-Oct-2018 17:53:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:53:54 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:209
+[25-Oct-2018 17:53:54 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:116
+[25-Oct-2018 17:56:28 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 111
+[25-Oct-2018 17:56:28 UTC] PHP Stack trace:
+[25-Oct-2018 17:56:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 17:56:28 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:204
+[25-Oct-2018 17:56:28 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:111
+[25-Oct-2018 18:06:08 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 92
+[25-Oct-2018 18:06:08 UTC] PHP Stack trace:
+[25-Oct-2018 18:06:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 18:06:08 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:185
+[25-Oct-2018 18:06:08 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:92
+[25-Oct-2018 18:06:40 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 92
+[25-Oct-2018 18:06:40 UTC] PHP Stack trace:
+[25-Oct-2018 18:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 18:06:40 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:185
+[25-Oct-2018 18:06:40 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:92
+[25-Oct-2018 18:08:44 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 91
+[25-Oct-2018 18:08:44 UTC] PHP Stack trace:
+[25-Oct-2018 18:08:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 18:08:44 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:184
+[25-Oct-2018 18:08:44 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:91
+[25-Oct-2018 18:12:17 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 91
+[25-Oct-2018 18:12:17 UTC] PHP Stack trace:
+[25-Oct-2018 18:12:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 18:12:17 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:184
+[25-Oct-2018 18:12:17 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:91
+[25-Oct-2018 18:12:38 UTC] PHP Warning:  mktime() expects parameter 4 to be long, string given in /home/ubuntu/workspace/cst352/midterm/program1.php on line 91
+[25-Oct-2018 18:12:38 UTC] PHP Stack trace:
+[25-Oct-2018 18:12:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/midterm/program1.php:0
+[25-Oct-2018 18:12:38 UTC] PHP   2. build_calendar() /home/ubuntu/workspace/cst352/midterm/program1.php:184
+[25-Oct-2018 18:12:38 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:91
+[25-Oct-2018 18:38:50 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst352/midterm/program1.php on line 77
+[25-Oct-2018 18:39:00 UTC] PHP Parse error:  syntax error, unexpected '2' (T_LNUMBER) in /home/ubuntu/workspace/cst352/midterm/program1.php on line 77
