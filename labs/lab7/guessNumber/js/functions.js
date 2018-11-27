@@ -36,6 +36,10 @@
                         lastResult.style.background = 'pink';
                         if (userGuess < randomNumber){
                             lowOrHi.innerHTML = 'Your last guess was too low!';
+                        } else if (userGuess > 99){
+                            lowOrHi.innerHTML = 'ERROR: Pick a number between 1-99.';
+                            guessCount.disabled = true;
+                            guessField.disabled = true;
                         } else if (userGuess > randomNumber){
                             lowOrHi.innerHTML = 'Your last guess was too high!';
                         }
