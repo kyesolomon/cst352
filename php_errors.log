@@ -78,3 +78,52 @@
 [25-Oct-2018 18:12:38 UTC] PHP   3. mktime() /home/ubuntu/workspace/cst352/midterm/program1.php:91
 [25-Oct-2018 18:38:50 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst352/midterm/program1.php on line 77
 [25-Oct-2018 18:39:00 UTC] PHP Parse error:  syntax error, unexpected '2' (T_LNUMBER) in /home/ubuntu/workspace/cst352/midterm/program1.php on line 77
+[13-Dec-2018 05:18:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/loginProcess.php(7): dbConnection('vidBox')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 05:22:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/loginProcess.php(7): dbConnection('vidBox')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 05:24:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/loginProcess.php(7): dbConnection('vidBox')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 05:49:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/loginProcess.php(7): dbConnection('vidBox')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 06:02:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 15
+[13-Dec-2018 06:03:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 15
+[13-Dec-2018 06:04:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 16
+[13-Dec-2018 06:28:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 16
+[13-Dec-2018 06:46:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'gameId WHERE gameId =' at line 1' in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 16

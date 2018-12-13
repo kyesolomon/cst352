@@ -1,0 +1,31 @@
+h1, p, input{
+            font-family: 'Bungee', cursive;
+                
+}
+.btn {
+    float: right;
+}
+.jumbotron{
+    width: 65%;
+    margin: 0 auto;
+    background: snow;
+    margin-top: 10%;
+}
+body {
+    background-image: url("https://hdqwalls.com/wallpapers/miami-trees-triangle-neon-artwork-4k-7r.jpg");
+    background-size:cover;
+    /*background-color: #38343e;*/
+}
+#searchGames {
+     background: white;
+}
+.modal-body{
+    background-image: url("img/modalBack.jpg");
+    color: white;
+}
+.modal-footer{
+    background: white;
+}
+#attr{
+    color: #e6d5e6; 
+}
