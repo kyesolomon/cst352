@@ -2,7 +2,7 @@
 
 
 include "../sql/vGconnection.php";
-$dbConn = dbConnection("c9");
+$dbConn = dbConnection("vidBox");
 
 
 if(!isset($_GET['submitBtn']))

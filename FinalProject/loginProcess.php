@@ -4,7 +4,7 @@ session_start();  //starts or resumes a session
 //verifies that username and password are valid
 
  include 'sql/vGconnection.php';
- $dbConn = dbConnection("c9");
+ $dbConn = dbConnection("vidBox");
 
  $username = $_POST['username'];
  $password = sha1($_POST['password']);
