@@ -8,7 +8,7 @@ if (!isset($_SESSION['adminName'])) { //validates whether the admin has logged i
 }
 
 include 'sql/vGconnection.php';
-$dbConn = dbConnection("c9");
+$dbConn = dbConnection("vidBox");
 
 function displayAllGames(){
     global $dbConn;
