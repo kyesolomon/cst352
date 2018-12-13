@@ -8,7 +8,7 @@ if (!isset($_SESSION['adminName'])) {
 }
 
 include 'sql/vGconnection.php';
-$dbConn = dbConnection("vidBox");
+$dbConn = dbConnection("c9");
 
 function getGameInfo() {
     global $dbConn;

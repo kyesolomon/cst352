@@ -1,0 +1,60 @@
+[13-Dec-2018 18:52:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(5): dbConnection('c9')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 18:52:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(5): dbConnection('c9')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 18:52:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(5): dbConnection('c9')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 18:52:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(5): dbConnection('c9')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 18:52:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'sampopl25'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php(20): PDO->__construct('mysql:host=loca...', 'sampopl25', '')
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(5): dbConnection('c9')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/sql/vGconnection.php on line 20
+[13-Dec-2018 18:56:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.videoGames' doesn't exist' in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(20): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(25): getGameInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php on line 20
+[13-Dec-2018 18:56:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.videoGames' doesn't exist' in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(20): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(25): getGameInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php on line 20
+[13-Dec-2018 18:57:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.videoGames' doesn't exist' in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(20): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(25): getGameInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php on line 20
+[13-Dec-2018 18:57:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.videoGames' doesn't exist' in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(20): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(25): getGameInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php on line 20
+[13-Dec-2018 19:07:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.videoGames' doesn't exist' in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(20): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php(25): getGameInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/FinalProject/api/GetGameInfo.php on line 20

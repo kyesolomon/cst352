@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 if (!isset($_SESSION['adminName'])) {
     
@@ -10,15 +10,12 @@ if (!isset($_SESSION['adminName'])) {
 include 'sql/vGconnection.php';
 $dbConn = dbConnection("vidBox");
 
-$sql = "DROP videoGames.gameId WHERE gameId = " . $_GET['gameId'];
-$stmt = $dbConn->prepare($sql);
-// $stmt->execute();
-if ($stmt->execute()) { 
-   echo "Video game deleted from vidBox";
-} else {
-   echo "ERROR";
-}
+$sql = "DELETE FROM videoGames WHERE gameId = ".$_GET['gameId'];
 
-header("Location: index.php");
+$statement = $dbConn->prepare($sql);
+$statement->execute();
+
+
+header("Location: main.php");
 
 ?>

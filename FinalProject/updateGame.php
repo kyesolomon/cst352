@@ -9,12 +9,13 @@ if (!isset($_SESSION['adminName'])) {
 
 
 include 'sql/vGconnection.php';
-$dbConn = dbConnection("vidBox");
+$dbConn = dbConnection("c9");
 
 function getGameInfo() {
     global $dbConn;
     
-    $sql = "SELECT * FROM `videoGame` WHERE gameId = "  . $_GET['gameId'];
+    $sql = "SELECT * FROM `videoGames` WHERE `gameId` = " . $_GET['gameId'];
+    
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $record = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -50,7 +51,9 @@ if (isset($_GET['updateGameForm'])) { // User submitted the form
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($np);
     
+    
     echo "Game info was updated!";
+    
     
 }
 
@@ -58,7 +61,7 @@ if (isset($_GET['updateGameForm'])) { // User submitted the form
 
 if (isset($_GET['gameId'])) {
     
-    $authorInfo = getGameInfo();
+    $gameInfo = getGameInfo();
     //print_r($authorInfo);
     
     
@@ -71,6 +74,7 @@ if (isset($_GET['gameId'])) {
 <html>
     <head>
         <title> Update Game </title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <style>
@@ -134,29 +138,16 @@ if (isset($_GET['gameId'])) {
     
                 <input type="submit" value="Update Game" name="updateGameForm" />
                 </div>
-            </div>
+            
         </form>
         
+        <form action="main.php">
+            <input type="submit" value="back to admin"/>
+        </form>
+        </div>
         
         
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Game Info</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe name="authorModal" width='450'height='200'></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+       
         
         
         

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>login for games </title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <style>

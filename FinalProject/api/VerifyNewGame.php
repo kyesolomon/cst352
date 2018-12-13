@@ -1,6 +1,6 @@
 <?php
 include "../sql/vGconnection.php";
-$dbConn = dbConnection("vidBox");
+$dbConn = dbConnection("c9");
 
 $search = $_GET['gameTitle'];
 

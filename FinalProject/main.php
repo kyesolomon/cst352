@@ -1,8 +1,3 @@
-
-
-
-
-
 <?php
 session_start();
 
@@ -13,12 +8,12 @@ if (!isset($_SESSION['adminName'])) { //validates whether the admin has logged i
 }
 
 include 'sql/vGconnection.php';
-$dbConn = dbConnection("vidBox");
+$dbConn = dbConnection("c9");
 
 function displayAllGames(){
     global $dbConn;
     
-    $sql = "SELECT title, genre, developer, releaseYear
+    $sql = "SELECT gameId, title, genre, developer, releaseYear
               FROM videoGames
               ORDER BY title";
     
@@ -28,20 +23,43 @@ function displayAllGames(){
     
     foreach ($games as $game) {
         
-        echo "<div class='main'>";
+        
         echo "<a   class='btn btn-primary' role='button' href='updateGame.php?gameId=".$game['gameId']."'>update</a> ";
         //echo "[<a href='deleteAuthor.php'>delete</a>] ";
-        echo "<form action='deleteGame.php'  onsubmit='return confirmDelete()'  >";
-        echo "  <input type='hidden' name='gameId' value='".$game['gameId']."' >";
+        echo "<form action='deleteGame.php' onsubmit='return confirmDelete()' >";
+        echo "  <input type='hidden' name='gameId' value='" . $game['gameId']. "' >";
         echo "  <button class='btn btn-outline-danger' type='submit'>Delete</button>";
         echo "</form> ";
-        echo "<a onclick='openModal()' target='gameModal'  href='gameInfo.php?gameId=".$game['gameId']."'> " . $game['title'] . "  " . $game['genre'] . "</a>  ";
+        echo "<p> " . $game['title'] . "  " . $game['genre'] . "</p>  ";
         echo "<span class='developer'>";
         echo $game['developer'] . "<br><br>";
         echo "</span>";
-        echo "</div>";
+        echo "<hr>";
         
     }
+}
+
+function displayGameAVG() {
+    global $dbConn;
+    $sql = "SELECT ROUND(AVG(price),2) AS avg FROM `videoGames`";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $avgGames = $stmt->fetch(PDO::FETCH_ASSOC); 
+    
+    echo $avgGames['avg'];
+}
+
+function displayNumGames() {
+    global $dbConn;
+    $sql = "SELECT COUNT(title) AS num FROM `videoGames`";
+    
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $numGames = $stmt->fetch(PDO::FETCH_ASSOC); 
+    
+    
+    echo $numGames['num'];
+    // print_r($numGames);
 }
 
 ?>
@@ -79,13 +97,26 @@ function displayAllGames(){
             body {
                 background-image: url("https://hdqwalls.com/wallpapers/miami-trees-triangle-neon-artwork-4k-7r.jpg");
                 background-size:cover;
+                background: cadetblue;
             }
+            
             .jumbotron{
                 width: 65%;
                 margin: 0 auto;
                 background: snow;
-                margin-top: 10%;
                 
+                overflow:scroll;
+            }
+            h1, h4{
+                color: white;
+                font-family: 'Bungee', cursive;
+            }
+            .welcome{
+                color: white;
+                font-family: 'Bungee', cursive;
+            }
+            .center {
+                text-align:center;
             }
             
         </style>
@@ -93,14 +124,14 @@ function displayAllGames(){
         <script>
             
                 function confirmDelete() {
-                   return confirm("Do you really want to delete this author?");
+                   var confirmID =  confirm("Do you really want to delete this game?");
+                   if(confirmID)
+                   {
+                        return true;
+                   }
                 }            
                 
-                function openModal() {
-                    
-                    $('#myModal').modal("show");
-                    
-                }
+              
                 
         </script>
         
@@ -110,11 +141,11 @@ function displayAllGames(){
         <div class="center">
         <h1>  Admin Section</h1>
         <span class="welcome">Welcome <?= $_SESSION['adminName'] ?></span>
-        </div>
-        
-        <br><hr><br>
-        <div class="center">
-       
+        <br>
+        <h4 > Number of Games in DB: <?= displayNumGames(); ?></h4>
+        <h4> Average Price of Games in DB: $<?= displayGameAVG(); ?></h4>
+        <br>
+        <br>
         <form action="logout.php">
             <input class="btn btn-primary btn-lg btn-light" type="submit" name="logout" value="Logout"/>
         </form>
@@ -123,32 +154,15 @@ function displayAllGames(){
             <input class="btn btn-primary btn-lg btn-light" type="submit" name="logout" value="searchGames"/>
         </form>
         </div>
+        
+        <br><hr><br>
+        <div class="jumbotron">
+            
+            <?=displayAllGames()?>
+        
+        </div>
         <br /> <br />
         
-        <?=displayAllGames()?>
-        
-        
-        
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Game Info</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe name="gameModal" width='450'height='200'></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
         
         
         
