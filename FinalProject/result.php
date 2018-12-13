@@ -7,7 +7,7 @@ session_start();
 if(isset($_GET['addGameForm']))
 {
     include "sql/vGconnection.php";
-    $dbConn = dbConnection("c9");
+    $dbConn = dbConnection("vidBox");
     
     
     $title = $_GET['gameTitle'];
