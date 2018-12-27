@@ -1,0 +1,32 @@
+[20-Dec-2018 19:00:55 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 8
+[20-Dec-2018 19:00:55 UTC] PHP Stack trace:
+[20-Dec-2018 19:00:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[20-Dec-2018 19:00:55 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/practice/welcome.php:8
+[20-Dec-2018 19:00:55 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 8
+[20-Dec-2018 19:00:55 UTC] PHP Stack trace:
+[20-Dec-2018 19:00:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[20-Dec-2018 19:00:55 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/practice/welcome.php:8
+[21-Dec-2018 10:02:16 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 8
+[21-Dec-2018 10:02:16 UTC] PHP Stack trace:
+[21-Dec-2018 10:02:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:02:16 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/practice/welcome.php:8
+[21-Dec-2018 10:02:16 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 8
+[21-Dec-2018 10:02:16 UTC] PHP Stack trace:
+[21-Dec-2018 10:02:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:02:16 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/practice/welcome.php:8
+[21-Dec-2018 10:05:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 25
+[21-Dec-2018 10:05:05 UTC] PHP Stack trace:
+[21-Dec-2018 10:05:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:05:37 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 23
+[21-Dec-2018 10:05:37 UTC] PHP Stack trace:
+[21-Dec-2018 10:05:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:06:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 26
+[21-Dec-2018 10:06:24 UTC] PHP Stack trace:
+[21-Dec-2018 10:06:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:08:59 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 29
+[21-Dec-2018 10:08:59 UTC] PHP Stack trace:
+[21-Dec-2018 10:08:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0
+[21-Dec-2018 10:08:59 UTC] PHP   2. mysqli->prepare() /home/ubuntu/workspace/cst352/final/practice/welcome.php:29
+[21-Dec-2018 10:08:59 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/cst352/final/practice/welcome.php on line 30
+[21-Dec-2018 10:08:59 UTC] PHP Stack trace:
+[21-Dec-2018 10:08:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/practice/welcome.php:0

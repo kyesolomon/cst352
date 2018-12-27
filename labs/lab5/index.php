@@ -7,7 +7,7 @@ $dbConn = getConnection("quotes");
 function displayAllQuotes() {
     global $dbConn;
     
-    $sql = "SELECT * FROM q_quotes";
+    $sql = "SELECT * FROM q_author";
     $statement = $dbConn->prepare($sql);
     $statement->execute();
     //$records = $statement->fetch(); //returns only ONE record
@@ -27,13 +27,14 @@ function displayAllQuotes() {
 function displayRandomQuote() {
     global $dbConn;
     
-    $randomRecord = rand(0,26);
+    $randomRecord = rand(0,31);
     $sql = "SELECT * FROM q_quotes 
             NATURAL JOIN q_author  
-            LIMIT $randomRecord,1";
+            LIMIT $randomRecord,2";
+    // $sql = "SELECT `quote`, `authorName` FROM `q_final` LIMIT $randomRecord,2";
     $statement = $dbConn->prepare($sql);
     $statement->execute();
-    //$records = $statement->fetch(); //returns only ONE record
+    $records = $statement->fetch(); //returns only ONE record
     $records = $statement->fetchAll(PDO::FETCH_ASSOC); //returns multiple records
     
     //print_r($records);
@@ -42,7 +43,7 @@ function displayRandomQuote() {
         
         echo $record['quote'] . "<br>";
         echo "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>";
-        echo  $record['firstName'] . "  " . $record['lastName'];
+        echo  $record['authorName'] . "<br>";
         echo "</a>";
     }
     
@@ -55,6 +56,8 @@ function displayRandomQuote() {
 <html>
     <head>
         <title> Lab 5: Random Famous Quote </title>
+        <style>@import 'styles.css';</style>
+        
     </head>
     <body>
 
@@ -64,8 +67,8 @@ function displayRandomQuote() {
          <?= displayRandomQuote() ?>
          <br><br>
       
-        <iframe name="authorInfo" frameborder="0" width="600" height="300"> </iframe>
-   
+        <iframe name="authorInfo" frameborder="0" width="1000" height="500"></iframe>
+        
         <!--
         //find out how many records there eare in the quotes table.
         

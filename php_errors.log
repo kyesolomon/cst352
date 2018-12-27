@@ -143,3 +143,136 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php(16): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/cst352/FinalProject/deleteGame.php on line 16
+[18-Dec-2018 17:27:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'final.final' doesn't exist' in /home/ubuntu/workspace/cst352/final/program1.php:33
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/final/program1.php(33): PDO->query('SELECT * FROM f...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/final/program1.php on line 33
+[18-Dec-2018 17:27:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'final.final' doesn't exist' in /home/ubuntu/workspace/cst352/final/program1.php:33
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/final/program1.php(33): PDO->query('SELECT * FROM f...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst352/final/program1.php on line 33
+[18-Dec-2018 17:28:31 UTC] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/ubuntu/workspace/cst352/final/program1.php on line 34
+[18-Dec-2018 17:28:31 UTC] PHP Stack trace:
+[18-Dec-2018 17:28:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/program1.php:0
+[18-Dec-2018 17:29:42 UTC] PHP Fatal error:  Call to undefined method PDO::close() in /home/ubuntu/workspace/cst352/final/program1.php on line 42
+[18-Dec-2018 17:29:42 UTC] PHP Stack trace:
+[18-Dec-2018 17:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/program1.php:0
+[18-Dec-2018 18:01:35 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/cst352/final/program1.php on line 33
+[18-Dec-2018 18:01:35 UTC] PHP Stack trace:
+[18-Dec-2018 18:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/program1.php:0
+[18-Dec-2018 18:17:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst352/final/program1.php on line 115
+[18-Dec-2018 18:19:53 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/cst352/final/program1.php on line 45
+[18-Dec-2018 19:33:42 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 3
+[18-Dec-2018 19:33:42 UTC] PHP Stack trace:
+[18-Dec-2018 19:33:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:33:42 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:3
+[18-Dec-2018 19:33:42 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 3
+[18-Dec-2018 19:33:42 UTC] PHP Stack trace:
+[18-Dec-2018 19:33:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:33:42 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:3
+[18-Dec-2018 19:41:18 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:41:18 UTC] PHP Stack trace:
+[18-Dec-2018 19:41:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:41:18 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:41:18 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:41:18 UTC] PHP Stack trace:
+[18-Dec-2018 19:41:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:41:18 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:26 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:26 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:26 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:26 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:26 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:26 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:27 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:27 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:27 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:27 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:27 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:27 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:27 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:27 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:27 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:27 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:29 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:29 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:29 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:29 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:29 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:29 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:30 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:30 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8
+[18-Dec-2018 19:51:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst352/final/welcome.php on line 8
+[18-Dec-2018 19:51:31 UTC] PHP Stack trace:
+[18-Dec-2018 19:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst352/final/welcome.php:0
+[18-Dec-2018 19:51:31 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst352/final/welcome.php:8

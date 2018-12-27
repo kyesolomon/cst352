@@ -1,0 +1,19 @@
+body {
+    color: maroon;
+    background-color: linen;
+    font-family: Papyrus;
+    font-size: 1em;
+    margin: 100px;
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
+a:hover{
+    color: blue;
+}
+#infoBox {
+    color: maroon;
+    font-family: verdana;
+    font-size: .75em;
+}

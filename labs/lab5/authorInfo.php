@@ -15,11 +15,15 @@ function displayAuthorInfo(){
   $record = $stmt->fetch(PDO::FETCH_ASSOC); //We expect only ONE record
  
   //print_r($record);
-  
-  echo "Bio: " . $record['bio'] . "<br>";
-  echo "Day of Birth" . $record['dob'] . "<br>";
-  echo "Day of Dead: ". $record['dod'] . "<br>";
- 
+  echo "<img src='" . $record['imgUrl']. "'<br><br>";
+  echo "<div id=\"infoBox\">";
+  echo "Born: " . $record['dob'] . "<br>";
+  echo "Died: ". $record['dod'] . "<br>";
+  echo "Gender: " . $record['gender'] . "<br>";
+  echo "Country of Origin: " . $record['coo'] . "<br>";
+  echo "Profession: " . $record['profession'] . "<br>";
+  echo "Bio: " . $record['bio'];
+  echo "</div>";
 }
 
 ?>
@@ -28,14 +32,13 @@ function displayAuthorInfo(){
 <html>
     <head>
         <title> Author Info </title>
+        <style>@import 'styles.css';</style>
     </head>
     <body>
 
-        <h2> Author Info </h2>
-
-        <br>
-        
+        <h2> Author Info <br></h2>
         <?=displayAuthorInfo()?>
+        
         
     </body>
 </html>
