@@ -46,7 +46,7 @@
                         $.ajax({
                         
                         type: "GET",
-                        url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                        url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php?state=ca",
                         dataType: "json",
                         data: { "state":$("#state").val() },
                         success: function(data,status) {
@@ -74,7 +74,7 @@
                     $.ajax({
                     
                     type: "GET",
-                    url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                    url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php?zip=93955",
                     dataType: "json",
                     data: { "zip": $("#zipCode").val() },
                     success: function(data,status) {
