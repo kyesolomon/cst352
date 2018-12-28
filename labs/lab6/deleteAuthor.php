@@ -14,6 +14,8 @@ $sql = "DELETE FROM q_author WHERE authorId = " . $_GET['authorId'];
 $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 
+echo "Author was deleted!";
+
 header("Location: main.php");
 
 ?>

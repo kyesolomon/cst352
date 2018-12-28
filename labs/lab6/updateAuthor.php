@@ -26,24 +26,22 @@ function getAuthorInfo() {
 if (isset($_GET['updateAuthorForm'])) { // User submitted the form
     
     $sql = "UPDATE `q_author` 
-            SET   firstName = :firstName,
-                  lastName  = :lastName,
+            SET   authorName = :authorName,
                   gender    = :gender,
                   dob       = :dob,
                   dod       = :dod,
                   profession= :profession,
-                  country   = :country,
-                  picture   = :picture,
+                  coo   = :coo,
+                  imgUrl   = :imgUrl,
                   bio       = :bio
               WHERE authorId = " . $_GET['authorId'];
     $np = array();
-    $np[":firstName"] = $_GET['firstName'];
-    $np[":lastName"]  = $_GET['lastName'];
+    $np[":authorName"] = $_GET['authorName'];
     $np[":dob"]       = $_GET['dob'];
     $np[":dod"]       = $_GET['dod'];
     $np[":profession"] = $_GET['profession'];
-    $np[":country"]    = $_GET['country'];
-    $np[":picture"]    = $_GET['imageUrl'];
+    $np[":coo"]    = $_GET['coo'];
+    $np[":imgUrl"]    = $_GET['imgUrl'];
     $np[":bio"]        = $_GET['bio'];
     $np[":gender"]     = $_GET['gender'];
     
@@ -70,7 +68,8 @@ if (isset($_GET['authorId'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Update Author </title>
+        <title>Admin: Update Author</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
     </head>
     <body>
         
@@ -78,8 +77,7 @@ if (isset($_GET['authorId'])) {
         
           <form>
             <input type="hidden" name="authorId" value="<?= $authorInfo['authorId'] ?>" />
-            First Name: <input type="text" name="firstName" value="<?= $authorInfo['firstName'] ?>" /> <br />
-            Last Name: <input type="text" name="lastName"   value="<?= $authorInfo['lastName'] ?>"/> <br />
+            Full name: <input type="text" name="authorName" value="<?= $authorInfo['authorName'] ?>"/> <br/>
             Gender: 
             <input type="radio" name="gender" value="M" id="genderMale"  
             
@@ -100,10 +98,10 @@ if (isset($_GET['authorId'])) {
             
             Day of birth: <input type="text" name="dob"  value="<?= $authorInfo['dob'] ?>"/> <br />
             Day of death: <input type="text" name="dod"  value="<?= $authorInfo['dod'] ?>"/> <br />
-            Country: <input type="text" name="country"   value="<?= $authorInfo['country'] ?>"/> <br>
+            Country: <input type="text" name="coo"   value="<?= $authorInfo['coo'] ?>"/> <br>
             Profession: <input type="text" name="profession" value="<?= $authorInfo['profession'] ?>"/> <br>
             
-            Image URL: <input type="text" name="imageUrl" value="<?= $authorInfo['picture'] ?>" size="40"/><br>
+            Image URL: <input type="text" name="imgUrl" value="<?= $authorInfo['imgUrl'] ?>" size="40"/><br>
             Bio: 
             <textarea name="bio" cols="50" rows="5"/> <?= $authorInfo['bio'] ?> </textarea>
             

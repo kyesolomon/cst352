@@ -34,13 +34,14 @@ if (isset($_GET['authorId'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Author Info</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
     </head>
     <body>
         
-        <h2><?=$authorInfo['firstName']?>  <?=$authorInfo['lastName']?></h2>
+        <h2><?=$authorInfo['authorName']?></h2>
         <?=$authorInfo['bio']?><br>
-        <img src="<?=$authorInfo['picture']?>" height="100" />
+        <img src="<?=$authorInfo['imgUrl']?>" height="100" />
 
 
     </body>

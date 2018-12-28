@@ -13,9 +13,9 @@ $dbConn = getConnection("quotes");
 function displayAllAuthors(){
     global $dbConn;
     
-    $sql = "SELECT authorId, firstName, lastName, country
+    $sql = "SELECT authorId, authorName, coo
               FROM q_author
-              ORDER BY lastName";
+              ORDER BY authorName ASC";
     
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
@@ -30,7 +30,7 @@ function displayAllAuthors(){
         echo "  <input type='hidden' name='authorId' value='".$author['authorId']."' >";
         echo "  <button class='btn btn-outline-danger' type='submit'>Delete</button>";
         echo "</form> ";
-        echo "<a onclick='openModal()' target='authorModal'  href='authorInfo.php?authorId=".$author['authorId']."'> " . $author['lastName'] . "  " . $author['firstName'] . "</a>  ";
+        echo "<a onclick='openModal()' target='authorModal'  href='authorInfo.php?authorId=".$author['authorId']."'> " . $author['authorName'] . "</a>  ";
         echo $author['country'] . "<br><br>";
         
         
@@ -42,9 +42,7 @@ function displayAllAuthors(){
 <html>
     <head>
         <title> Admin Section </title>
-        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        
         <style>
             
             form {

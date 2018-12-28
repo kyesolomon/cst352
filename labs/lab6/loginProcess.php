@@ -48,6 +48,3 @@ session_start();  //starts or resumes a session
  
 
 ?>
-  
-  
-
