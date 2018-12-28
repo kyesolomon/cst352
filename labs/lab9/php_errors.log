@@ -31,3 +31,99 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[05-Dec-2018 02:57:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:08:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:10:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:10:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:11:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:11:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:19:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:19:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:20:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:20:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:21:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:24:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:24:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:25:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:25:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(19): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 13
+[28-Dec-2018 06:25:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(14): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php(20): displayPet()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst352/labs/lab9/api/getPetInfo.php on line 14

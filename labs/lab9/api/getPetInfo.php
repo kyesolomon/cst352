@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
     include '../../../sqlConnection.php';
     $dbConn = getConnection("pets");
@@ -6,8 +8,8 @@
         global $dbConn;
         
         $sql = "SELECT *
-                  FROM pets
-                  WHERE id = ".$_GET['id'];
+                FROM pets
+                WHERE id = ".$_GET['id'];
                  
         $stmt = $dbConn->prepare($sql);
         $stmt->execute();
@@ -19,10 +21,17 @@
     $petDisp=displayPet();
     
    
-   // print_r($petDisp);
+//   print_r($petDisp);
    
    //DO NOT DISPLAY ANYTHING OTHER THAN JSON FORMAT IN WEB APIS
     
     echo json_encode($petDisp);
 ?>
+
+
+    <head>
+        <title>Pet Shelter API</title>
+    </head>
+    
+</html>
 

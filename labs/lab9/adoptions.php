@@ -27,6 +27,7 @@ function displayAllPets(){
    include "inc/header.php";
   ?>
   <script>
+ 
   $(document).ready(function(){
         $('.petLink').click(function(){
           //alert( $(this).attr("id") );

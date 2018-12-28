@@ -1,7 +1,12 @@
- body {
-                text-align: center;
-            }
-            #carouselExampleIndicators{
-                width: 400px;
-                margin: auto;
-            }
+body {
+    text-align: center;
+}
+#carouselExampleIndicators {
+    width: 400px;
+    margin: auto;
+}
+#loading {
+    position: relative;
+    top: 250px;
+    left: 25px;
+}
