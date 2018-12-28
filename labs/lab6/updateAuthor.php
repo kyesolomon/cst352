@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['adminName'])) {
+    
+    header("Location: login.php");
+    
+}
 
 include '../../sqlConnection.php';
 $dbConn = getConnection("quotes");
@@ -70,6 +77,7 @@ if (isset($_GET['authorId'])) {
         <h1> Updating Author Info </h1>
         
           <form>
+            <input type="hidden" name="authorId" value="<?= $authorInfo['authorId'] ?>" />
             First Name: <input type="text" name="firstName" value="<?= $authorInfo['firstName'] ?>" /> <br />
             Last Name: <input type="text" name="lastName"   value="<?= $authorInfo['lastName'] ?>"/> <br />
             Gender: 

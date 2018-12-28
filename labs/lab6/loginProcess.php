@@ -18,7 +18,7 @@ session_start();  //starts or resumes a session
 //This sql prevents SQL INJECTION!!
  $sql = "SELECT * 
          FROM q_admin 
-         WHERE username = :u;
+         WHERE username = :u
          AND   password = :password ";
 
  $namedParameters = array();

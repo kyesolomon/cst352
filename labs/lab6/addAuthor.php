@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+if (!isset($_SESSION['adminName'])) {
+    
+    header("Location: login.php");
+    
+}
 
 if (isset($_GET['addAuthorForm'])) {  //checks whether the form has been submitted
 
