@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW3: PHP Arrays & Web APIs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#btnSubmit").click(function(){
+                  var answer1 = $('#q1').val().toLowerCase();
+                  var answer2 = $('#q2').val();
+                  var answer3 = $('#q3').val();
+                  var answer4 = $('#q4').val();
+                  var answer5 = $('#q5').val();
+                  var answer6 = $('#q6').val();
+                  var score=0;
+                  
+                  if(answer1 == "monte") {
+                      $('#feedback1').html("Correct!");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback1').html("No, it's Monte!");
+                  }
+                  
+                  if(answer2 == "7000") {
+                      $('#feedback2').html("Correct");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback2').html("No, we have around 7000 students currently enrolled!");
+                  }
+                  
+                  if(answer3 != "Christian" && answer3!="Irene") {
+                      $('#feedback3').html("Correct");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback3').html("No, Christian and Irene don't teach here anymore.");
+                  }
+                  
+                  if(answer4 == "BBC") {
+                      $('#feedback4').html("Correct");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback4').html("No, the oldest building is the BBC!");
+                  }
+                  
+                  if(answer5 == "kinesiology") {
+                      $('#feedback5').html("Correct");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback5').html("No, Kinesiology has the largest enrollment!");
+                  }
+                  
+                  if(answer6 != NULL) {
+                      $('#feedback6').html("Thanks for taking this survey!");
+                      score+=5;
+                  }
+                  else {
+                      $('#feedback6').html("Please enter your expected graduation date.");
+                  }
+                  
+                  
+                  $("#totalScore").html("The total Score is: "+score);
+                  
+                //   $.ajax({
+            
+                //     type: "GET",
+                //     url: "updateScore.php",
+                //     dataType: "json",
+                //     data: { "email":$("#emailAddress").val(), 
+                //             "score": score},
+                //     success: function(data,status) {
+                //       if(!data){
+                //             $("#prevScore").html("No previous score found.");
+                //             $("#totalAttempts").html("total attempts: 1");
+                //       }
+                //       else{
+                //             $("#prevScore").html("Your Previous Score was: " + data.score);
+                //             $("#totalAttempts").html("total attempts: " + (parseInt(data.attempts) + 1));  
+                //       }
+                       
+                    
+                //     },
+                    
+                //     });//ajax code end
+               }); 
+            });
+            
+           
+        </script>
+        <style>
+            @import url("styles.css");
+        </style>
+    </head>
+    <body>
+        <form>
+            1) Who is CSUMB's official Mascot?
+            <input type = "text" name = "fillInTheBlank" id="q1">
+            <span id="feedback1"></span> </br><br>
+            
+            2) What is the current enrollment at CSUMB? (Rounded off to the thousandths)<br>
+            <input type="number" name="enrollment" min="1000" max="10000" id="q2">
+            <span id="feedback2"></span><br><br>
+            
+            3) Which of the following are current professors at CSUMB?<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Christian" label for="Christian" id="q3">Christian Eckhardt<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Eric" label for="Eric" id="q3">Eric Tao<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Miguel" label for="Miguel" id="q3">Miguel Lara<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Bude" label for="Bude" id="q3">Bude Su<br>        
+            <input type = "checkbox" name = "multipleChoice" value= "Sathya" label for="Sathya" id="q3">Sathya Narayanan<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Irene" label for="Irene" id="q3">Irene Humer<br>
+            <input type = "checkbox" name = "multipleChoice" value= "Jason" label for="Jason" id="q3">Jason Henderson<br><br>
+            <span id="feedback3"></span><br><br>
+            
+            4) Which is the oldest building at CSUMB?<br>
+            <input type = "radio" name = "oneChoice" value = "BIT" label for="BIT" id="q4">Business and Information Technology Building<br>
+            <input type = "radio" name = "oneChoice" value = "Music" label for="Music" id="q4">Music Hall<br>
+            <input type = "radio" name = "oneChoice" value = "BBC" label for="BBC" id="q4">Black Box Cabaret<br>
+            <input type = "radio" name = "oneChoice" value = "UC" label for="UC" id="q4">University Center<br><br>
+            <span id="feedback4"></span><br><br>
+            
+            5) Which major has the largest enrollment?<br>
+            <select>
+                <option value = "nursing" id = "q5">Nursing</option>
+                <option value = "computing" id = "q5">Computer Science</option>
+                <option value = "design" id = "q5">Communication Design</option>
+                <option value = "kinesiology" id = "q5">Kinesiology</option>
+                <option value = "espanol" id = "q5">Espanol</option>
+                <span id="feedback5"></span>
+            </select><br><br>
+            
+            6) When is your expected graduation date?<br>
+            <input type = "date" name = "today" id ="q6">
+            <span id="feedback6"></span><br><br>
+            
+            <input type = "submit" value = "Submit">
+        </form>
+
+    </body>
+</html>
