@@ -1,0 +1,15 @@
+body {
+    background-color: maroon;
+    color: #9CBF2D;
+    position: relative;
+    margin: 100px;
+}
+#main {
+    position: relative;
+    left: 100px;
+    
+}
+#output {
+    position: relative;
+    left: 100px;
+}
