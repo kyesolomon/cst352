@@ -7,3 +7,25 @@
                 font-family: Helvetica;
                 font-size: 14px;
             }
+            form{
+                border-color: black;
+                border-style: inset;
+            }
+            #feedback1{
+                color: red;
+            }
+            #feedback2{
+                color: orange;
+            }
+            #feedback3{
+                color: yellow;
+            }
+            #feedback4{
+                color: green;
+            }
+            #feedback5{
+                color: blue;
+            }
+            #feedback6{
+                color: indigo;
+            }
