@@ -1,3 +1,12 @@
+h1{
+    font-style: normal;
+    font-weight: bolder;
+    text-align: justify;
+}
+form {
+    position: relative;
+    left: 500px;
+}
 body {
     background-color: maroon;
     color: #9CBF2D;
@@ -6,10 +15,11 @@ body {
 }
 #main {
     position: relative;
-    left: 100px;
-    
+    left: 150px;
+    margin: inherit;
 }
 #output {
     position: relative;
-    left: 100px;
+    left: 150px;
+    margin: inherit;
 }
